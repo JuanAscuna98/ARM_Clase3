@@ -1,10 +1,13 @@
 #include <stdio.h>
 
 void burbuja (int arreglo[], int longitud);
-//void intercambiar(int* a, int* b);
+void intercambiar(int* a, int* b);
 
 int main()
 {
+    printf("Aqui se ordenaran los numeros en orden ascendente");
+    printf("\n");
+
     int num_ordenar[] = {30, 25, 12, 34,-4, -53, 56, 200, 43, 28};
 
     //Mostrando datos del arreglo no ordenado
@@ -21,7 +24,7 @@ int main()
 
     printf("\n");
 
-    /*urbuja(num_ordenar,longitud_arreglo);
+    burbuja(num_ordenar,longitud_arreglo);
 
     printf("Datos del arreglo ordenados: ");
 
@@ -30,7 +33,7 @@ int main()
         printf("%d ",num_ordenar[i]);
     }
 
-    printf("\n");*/
+    printf("\n");
 }
 
 void burbuja(int arreglo[], int longitud)
@@ -41,16 +44,15 @@ void burbuja(int arreglo[], int longitud)
         {
             if (arreglo[k] > arreglo[k+1])
             {
-                
-                //intercambiar(&arreglo[k],&arreglo[k+1]);
+                intercambiar(&arreglo[k],&arreglo[k+1]);
             }
         }
     }
 }
 
-/*void intercambiar(int* a,int* b)
+void intercambiar(int* a,int* b)
 {
     int temporal = *a;
     *a = *b;
     *b = temporal;
-}*/
+}
