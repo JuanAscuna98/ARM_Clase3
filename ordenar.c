@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void burbuja (int arreglo[], int longitud);
-void intercambiar(int* a, int* b);
+//void intercambiar(int* a, int* b);
 
 int main()
 {
@@ -21,7 +21,7 @@ int main()
 
     printf("\n");
 
-    burbuja(num_ordenar,longitud_arreglo);
+    /*urbuja(num_ordenar,longitud_arreglo);
 
     printf("Datos del arreglo ordenados: ");
 
@@ -30,7 +30,7 @@ int main()
         printf("%d ",num_ordenar[i]);
     }
 
-    printf("\n");
+    printf("\n");*/
 }
 
 void burbuja(int arreglo[], int longitud)
@@ -41,15 +41,16 @@ void burbuja(int arreglo[], int longitud)
         {
             if (arreglo[k] > arreglo[k+1])
             {
-                intercambiar(&arreglo[k],&arreglo[k+1]);
+                
+                //intercambiar(&arreglo[k],&arreglo[k+1]);
             }
         }
     }
 }
 
-void intercambiar(int* a,int* b)
+/*void intercambiar(int* a,int* b)
 {
     int temporal = *a;
     *a = *b;
     *b = temporal;
-}
+}*/
